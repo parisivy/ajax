@@ -1,0 +1,12 @@
+/*/ FULL WEB /*/
+
+@media screen and (min-device-width: 900px) {
+
+	.mainBox {
+		position: relative;
+	}
+
+	.restForm {
+		display: none;
+	}
+

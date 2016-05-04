@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="UTF-8">
+
+		<link rel="stylesheet" type="text/css" href="ajax.css">
+		
+		<script type="text/javascript" src="selects.js"></script>
+		<script type="text/javascript" src="persona.js"></script>
+		<script type="text/javascript" src="form.js"></script>
+		
+
+
+		<title>Register</title>
+
+	</head>
+
+	<body>
+		<div class="mainBox">
+
+			<div class="right">
+
+				<div class="register">
+
+					<h1>Register</h1>
+
+					<form name="register" method="POST" action="http://pilote.techo.org/admin/?do=api.registrarPersona">
+						
+						<div class="initialForm">
+							<select id="country" name="nacionalidad">
+								<option>Selecciona un país</option>
+							</select><br />
+						
+							<button id="next" type="button">Siguiente</button>
+
+						</div>
+
+						<div class="restForm">
+							<input name="nombres" type="text" placeholder="Nombre"><br />
+							<input name="apellido" type="text" placeholder="Apellido"><br />
+							<input name="email" type="email" placeholder="Email"><br />
+							<input name="password" type="password" placeholder="Contraseña"><br />
+							<input name="cpassword" type="password" placeholder="Confirmar contraseña"><br />
+							<input name="dni" type="number" placeholder="DNI"><br />
+							<select name="sexo">
+								<option value="male">M</option>
+								<option value="female">F</option>
+							</select><br />
+							Fecha de nacimiento <input name="fechaNacimiento" type="date"><br />
+							Celular <input name="celular" type="tel"><br />
+							Provincia <select id="regions" name="provincia">
+								<option>Selecciona una provincia</option>
+							</select><br />
+							Sede <select id="sede" name="oficina">
+								<option>Selecciona una sede</option>
+							</select><br />
+							Ciudad <select name="ciudad">
+								<option>Selecciona una provincia</option>
+							</select><br />
+
+						
+							<button id="submit" type="submit">Enviar</button>
+
+						</div>		
+
+					</form>
+
+				</div>
+
+			</div>
+
+
+		</div>
+	</body>
+</html>
